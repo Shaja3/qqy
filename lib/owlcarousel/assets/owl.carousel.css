@@ -1,0 +1,102 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ *  Owl Carousel - Core
+ */
+
+ .owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage,
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 0ms; /* تعيين مدة الأنيميشن إلى صفر لإزالة التأثيرات */
+  animation-fill-mode: none; /* عدم ملء أنيميشن */
+}
+
+.owl-carousel .owl-animated-in,
+.owl-carousel .owl-animated-out {
+  z-index: auto; /* إعادة تعيين z-index */
+}
+
+.owl-carousel .fadeOut {
+  animation-name: none; /* إزالة اسم الأنيميشن */
+}
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: none; /* إزالة التحول */
+}
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 1; /* عرض الصورة الكسلية دون تأخير */
+  transition: none; /* إزالة التحول */
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: flat; /* إعادة تعيين transform-style */
+}
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative; /* إعادة تعيين position */
+  height: auto; /* إعادة تعيين الارتفاع */
+  background: none; /* إزالة الخلفية */
+}
+
+.owl-carousel .owl-video-play-icon {
+  display: none; /* إخفاء أيقونة التشغيل للفيديو */
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 1; /* عرض الصورة المصغرة دون تأخير */
+  transition: none; /* إزالة التحول */
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative; /* إعادة تعيين position */
+  z-index: auto; /* إعادة تعيين z-index */
+  height: auto; /* إعادة تعيين الارتفاع */
+  width: 100%; /* إعادة تعيين العرض */
+}
+
